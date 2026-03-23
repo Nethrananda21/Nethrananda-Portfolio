@@ -252,7 +252,10 @@
     .contact-socials-label{font-size:.85rem;color:#888;margin-right:.5rem;}
     .contact-social-icon{width:44px;height:44px;border-radius:50%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-size:1.1rem;transition:background .3s,transform .2s;}
     .contact-social-icon:hover{background:var(--bright);transform:translateY(-2px);}
-    @media(max-width:700px){.contact-cards{grid-template-columns:repeat(2,1fr);}.contact-cta{flex-direction:column;gap:.8rem;}}
+    @media(max-width:750px){
+      .contact-cards{grid-template-columns:repeat(2,1fr);}
+      .contact-cta{flex-direction:column;gap:.8rem;}
+    }
 
     /* ── FOOTER ── */
     footer{padding:1.2rem 3rem;border-top:1px solid rgba(45,212,191,0.07);display:flex;justify-content:space-between;align-items:center;background:var(--navy);}
@@ -271,25 +274,54 @@
     @keyframes glowPulse{0%,100%{opacity:.4;}50%{opacity:1;}}
 
     @media(max-width:900px){
-      nav{padding:1.5rem 2rem;}
+      nav{padding:1rem; flex-wrap: wrap; justify-content: space-between;}
+      .nav-links{display: none;}
+      .hero-inner{flex-direction: column; text-align: center; margin-top: 5rem; gap: 3rem; align-items: center;}
+      .hero-image-wrapper{justify-content: center; flex: none; width: 100%;}
+      .hero-image{max-width: 250px; border-radius: 2rem;}
+      .hero-content{flex: none; width: 100%; display: flex; flex-direction: column; align-items: center;}
+      .hero-tag{justify-content: center; margin-bottom: 1.5rem;}
+      .hero-tag::before{display: none;}
+      .hero-name{font-size: min(4rem, 10vw); margin-bottom: 1.5rem; line-height: 1.1;}
+      .hero-cta{justify-content: center; flex-direction: row; flex-wrap: wrap; gap: 1rem; width:100%; margin-top: 1.5rem;}
+      .hero-btn{padding: 0.8rem 1.4rem; font-size: 0.55rem;}
+      .hero-scroll{display: none;}
       .hero{padding:0 2rem 5rem;}
-      .about{grid-template-columns:1fr;padding:6rem 2rem;gap:3rem;}
+      .about{grid-template-columns:1fr;padding:6rem 2rem;gap:3rem;text-align: center;}
+      .about-links{justify-content: center;}
+      .about-body{margin-left: auto; margin-right: auto;}
       .stat-grid{padding-top:0;}
       .work-header,.skills,.achievements,.education,.certs,.contact,.training{padding-left:2rem;padding-right:2rem;}
-      .project-item{grid-template-columns:1fr;padding:2rem;gap:1rem;}
+      .project-item{grid-template-columns:1fr;padding:2rem;gap:1.5rem;}
       .project-arrow{display:none;}
       .ach-grid{grid-template-columns:1fr;}
       .ach-card{padding:1.8rem;}
-      .ach-rank{font-size:2.5rem;}
       .cert-row{grid-template-columns:1fr;gap:2rem;direction:ltr;}
       .cert-row:nth-child(even){direction:ltr;}
-      .cert-name{font-size:1.2rem;}
+      .cert-name{font-size:1.4rem;}
       .edu-header{flex-direction:column;gap:1rem;margin-bottom:3rem;}
       .edu-timeline{padding-left:1.5rem;}
       .edu-item{padding-left:2rem;padding-bottom:2.5rem;}
       .training-card{padding:1.8rem 1.5rem;}
       .training-card-top{flex-direction:column;gap:1rem;}
       .training-footer{flex-direction:column;align-items:flex-start;}
+    }
+
+    @media(max-width:600px){
+      .hero-inner { gap: 2.5rem; margin-top: 4.5rem; }
+      .hero-image { max-width: 200px; border-radius: 1.5rem; }
+      .hero-name { font-size: clamp(2.2rem, 9vw, 3rem); margin-bottom: 1rem; word-break: normal; }
+      .hero-sub { font-size: 0.55rem; line-height: 1.6; }
+      .hero-tag { font-size: 0.5rem; margin-bottom: 1.2rem; }
+      .hero-cta { flex-direction: row; align-items: center; justify-content: center; gap: 0.8rem; }
+      .hero-btn { text-align: center; padding: 0.7rem 1.2rem; font-size: 0.5rem; width: auto; }
+      
+      .stat-grid{grid-template-columns:1fr; gap: 3rem;}
+      .contact-cards{grid-template-columns:1fr;}
+      .work-header{flex-direction: column; align-items: flex-start; gap: 1rem;}
+      .training-card-top{align-items: flex-start;}
+      .section-label{margin-bottom: 2rem;}
+      footer{flex-direction: column; gap: 1rem; text-align: center;}
     }
   </style>
 </head>
