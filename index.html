@@ -308,13 +308,18 @@
     }
 
     @media(max-width:600px){
-      .hero-inner { gap: 2.5rem; margin-top: 4.5rem; }
-      .hero-image { max-width: 200px; border-radius: 1.5rem; }
-      .hero-name { font-size: clamp(2.2rem, 9vw, 3rem); margin-bottom: 1rem; word-break: normal; }
-      .hero-sub { font-size: 0.55rem; line-height: 1.6; }
-      .hero-tag { font-size: 0.5rem; margin-bottom: 1.2rem; }
-      .hero-cta { flex-direction: row; align-items: center; justify-content: center; gap: 0.8rem; }
-      .hero-btn { text-align: center; padding: 0.7rem 1.2rem; font-size: 0.5rem; width: auto; }
+      .hero-inner { display: block; position: relative; margin-top: 4.5rem; text-align: left; }
+      .hero-content { display: block; width: 100%; text-align: left; }
+      .hero-image-wrapper { position: absolute; top: 1.5rem; right: 0; width: 140px; display: flex; justify-content: flex-end; }
+      .hero-image { width: 100%; max-width: 140px; border-radius: 1.2rem; }
+      
+      .hero-tag { display: flex; justify-content: flex-start; font-size: 0.45rem; margin-bottom: 1rem; padding-right: 150px; }
+      .hero-tag::before { display: block; width: 1.2rem; }
+      .hero-name { font-size: clamp(1.8rem, 8vw, 2.5rem); margin-bottom: 0.8rem; padding-right: 150px; line-height: 1; word-break: break-word; text-align: left; }
+      .hero-sub { font-size: 0.55rem; line-height: 1.5; padding-right: 150px; text-align: left; }
+      
+      .hero-cta { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 3.5rem; width: 100%; }
+      .hero-btn { text-align: center; padding: 0.7rem 1.2rem; font-size: 0.55rem; width: auto; }
       
       .stat-grid{grid-template-columns:1fr; gap: 3rem;}
       .contact-cards{grid-template-columns:1fr;}
