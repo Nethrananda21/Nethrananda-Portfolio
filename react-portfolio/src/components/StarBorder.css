@@ -1,0 +1,52 @@
+.star-border-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 2px;
+  background: transparent;
+}
+
+.star-inner-content {
+  position: relative;
+  z-index: 1;
+  border-radius: 18px;
+  background: rgba(6, 6, 14, 0.95);
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+}
+
+.border-gradient-bottom,
+.border-gradient-top {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+  animation: star-orbit linear infinite;
+}
+
+.star-border-container:hover .border-gradient-bottom,
+.star-border-container:hover .border-gradient-top {
+  opacity: 1;
+}
+
+.border-gradient-bottom {
+  bottom: -150px;
+  right: -150px;
+  animation-direction: normal;
+}
+
+.border-gradient-top {
+  top: -150px;
+  left: -150px;
+  animation-direction: reverse;
+}
+
+@keyframes star-orbit {
+  0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}

@@ -1,0 +1,35 @@
+Mittapalyam Nethrananda Reddy
+LinkedIn: linkedin.com/in/nethrananda/	Email: reddynethrananda@gmail.com
+Github:	github.com/Nethrananda21	Mobile: +91-8688056525
+Skills
+Languages:	C++, C, Java, Python, JavaScript
+Tools/Platforms:	Git and GitHub, Linux, Docker, PostgreSQL, ClickHouse, Redpanda/Kafka
+Soft Skills:	Team Player, Leadership, Adaptability
+Projects
+Geom_Diffusion – Generative AI for Drug Design | GitHub Link	 	 January 2026 – February 2026
+Built a Generative AI platform for structure-based drug design utilizing a PyTorch implementation of E(3)-equivariant diffusion models, integrated with equivariant graph neural networks (EGNN) and classifier-free guidance for precise pocket-conditioned molecular generation.
+Engineered a memory-efficient, T4-safe architecture employing a cosine noise schedule, achieving >95% RDKit validity, >90% uniqueness, >0.5 QED (drug-likeness), and < -7.0 Vina score binding affinity on held-out protein pockets.
+Tech Used: Python, PyTorch, PyTorch Geometric, EGNN, DDPM, RDKit, YAML, WandB.
+CLIF – Cognitive Log Investigation Framework | GitHub Link	       February 2026 – March 2026
+Built a high-throughput data pipeline using Redpanda and ClickHouse, processing millions and billions of records with 0% data loss via batching and parallelization; sustained 66,586 events/sec and ensured integrity using Merkle tree anchoring.
+Developed a 3-agent LLM system (Triage, Hunter, Verifier) that automated 7,476 investigations with strong validation (F1: 0.9469); improved data quality using an ML ensemble (LightGBM, EIF, ARF) with SHAP explainability.
+Tech Used: Python, Go, ClickHouse, Redpanda, LightGBM, Prometheus, Grafana, Next.js
+Training
+Data Structures & Algorithms | Link	July 2025
+Completed Data Structures & Algorithms training at CipherSchools, covering core concepts and problem-solving strategies.
+Practiced implementation of key structures such as arrays, linked lists, stacks, queues, trees, and graphs on various platforms like LeetCode, GeeksforGeeks and Code360.
+Strengthened algorithmic thinking through exercises in recursion, sorting, searching, and time–space complexity.
+Certificates
+Master Generative AI & Generative AI tools | Infosys Springboard	September 2025
+Computer Communications Specialization | Coursera	March 2024
+Ethical Hacking | NPTEL	November 2025
+Achievements
+Achieved Top 8 in a 200+ Participant Coding Challenge:	November 2025 Applied efficient algorithms and logical reasoning to solve coding problems accurately within strict time constraints.
+Placed Top 15 in a 180-Team Cybersecurity Hackathon:	December 2024 Demonstrated practical cybersecurity expertise including intrusion detection, vulnerability assessment, and response strategy execution.
+Education
+Lovely Professional University	Phagwara, Punjab
+Bachelor of Technology - Computer Science and Engineering; CGPA: 8.2	August 2023 - Present
+Narayana Junior College	Tirupati, Andhra Pradesh
+Intermediate; Percentage: 92	April 2021 - March 2023
+Sri Chaitanya Olympiad School	Vijayawada, Andhra Pradesh
+Matriculation; Percentage: 72	April 2020 - March 2021
